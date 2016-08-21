@@ -1,6 +1,6 @@
 *.pyc
 __pycache__
-myvenv
+knv_blog_env/
 db.sqlite3
 /static
 .DS_Store
