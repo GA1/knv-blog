@@ -4,7 +4,6 @@ from .models import Post
 import sys
 
 def post_list(request):
-    #posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     posts = Post.objects.all().order_by('published_date')
     for post in posts:
     	post.text = post.text[:200] + "........"
@@ -12,8 +11,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts':posts})
 
 def post(request, title):
-    posts = Post.objects.filter(title=title)
-    return render(request, 'blog/post.html', {'posts':posts})
+    post = Post.objects.filter(title=title).first()
+    if post == None:
+        return no_page_found(request)
+    return render(request, 'blog/post.html', {'post':post})
 
 def no_page_found(request):
-    return render(request, 'blog/no_page_found.html',)
+    return render(request, 'blog/no_page_found.html', status=404)
