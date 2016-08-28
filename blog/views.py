@@ -5,15 +5,14 @@ import sys
 
 def post_list(request):
     #posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    posts = Post.objects.all()
-    print('22222222222222222')
+    posts = Post.objects.all().order_by('published_date')
+    for post in posts:
+    	post.text = post.text[:200] + "........"
+    	print(post.text)
     return render(request, 'blog/post_list.html', {'posts':posts})
 
 def post(request, title):
     posts = Post.objects.filter(title=title)
-    print('11111111111111111')
-    print(title)
-    print('11111111111111111')
     return render(request, 'blog/post_list.html', {'posts':posts})
 
 def no_page_found(request):

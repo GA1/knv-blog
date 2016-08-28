@@ -6,6 +6,9 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     text = models.TextField()
+    language = models.TextField(default="en")
+    topic = models.TextField(default="Programming")
+    is_draft = models.BooleanField(default=False)    
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
