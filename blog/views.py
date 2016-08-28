@@ -13,7 +13,7 @@ def post_list(request):
 
 def post(request, title):
     posts = Post.objects.filter(title=title)
-    return render(request, 'blog/post_list.html', {'posts':posts})
+    return render(request, 'blog/post.html', {'posts':posts})
 
 def no_page_found(request):
     return render(request, 'blog/no_page_found.html',)
