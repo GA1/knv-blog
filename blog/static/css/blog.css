@@ -5,7 +5,7 @@ body {
 
 h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
+    font-family: 'IM Fell Great Primer', serif;
 }
 
 .comments {
@@ -29,10 +29,12 @@ h1 a {
 
 .post-text {
     text-align: justify;
+    font-size: 13pt;
+    font-family: 'IM Fell Great Primer', serif;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster';
+    font-family: 'IM Fell Great Primer', serif;
 }
 
 .date {
