@@ -6,7 +6,7 @@ import sys
 def post_list(request):
     posts = Post.objects.all().order_by('published_date')
     for post in posts:
-    	post.text = extract_first_three_lines_or_200_Charspost(text[:200] + "........")
+    	post.text = post.text[:100] + "......."
     	print(post.text)
     return render(request, 'blog/post_list.html', {'posts':posts})
 
