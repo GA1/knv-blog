@@ -1,7 +1,8 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
-{% block content %}
 
+{% block content %}
+{% autoescape off %}
         <div class="post">
             <div class="date">
                 {{ post.published_date }}
@@ -34,6 +35,6 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
-
+{% endautoescape %}
 {% endblock %}
 
