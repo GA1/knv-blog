@@ -33,6 +33,12 @@ h1 a {
     font-family: 'IM Fell Great Primer', serif;
 }
 
+.writing-text {
+    text-align: justify;
+    font-size: 13pt;
+    font-family: 'IM Fell Great Primer', serif;
+}
+
 h1, h2, h3, h4 {
     font-family: 'IM Fell Great Primer', serif;
 }
@@ -44,10 +50,6 @@ h1, h2, h3, h4 {
 
 .save {
     float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
