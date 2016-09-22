@@ -13,7 +13,7 @@ h1 a {
 }
 
 .page-header {
-    background-color: LightSkyBlue;
+    background-color: aliceblue;
     margin-top: 0;
     padding: 5px 5px 5px 5px;
     text-align: left;
@@ -22,14 +22,15 @@ h1 a {
 }
 
 .page-header, .page-header a, .page-header a:visited, .page-header a:active {
-    color: white;
+    color: /*white*/;
     font-size: 24pt;
     text-decoration: none;
+    font-family: 'IM Fell Great Primer', serif;
 }
 
 .post-text {
     text-align: justify;
-    font-size: 13pt;
+    font-size: 18pt;
     font-family: 'IM Fell Great Primer', serif;
 }
 
@@ -39,11 +40,14 @@ h1 a {
     font-family: 'IM Fell Great Primer', serif;
 }
 
-h1, h2, h3, h4 {
+.title, .title a{
+    text-decoration: none;
+    font-size: 25pt;
     font-family: 'IM Fell Great Primer', serif;
 }
 
 .date {
+    font-size: 15;
     float: right;
     color: #D2D0BA;
 }
@@ -59,6 +63,9 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post {
+    font-size: 20;
     color: #000000;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }

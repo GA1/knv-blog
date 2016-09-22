@@ -7,7 +7,9 @@
             <div class="date">
                 {{ post.created_date }}
             </div>
-            <h3><a href="/posts/{{post.title}}">{{post.title}}</a></h3>
+            <div class="title">
+                <a href="/posts/{{post.title}}">{{post.title}}</a>
+            </div>
             <div class="post-text">
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
