@@ -13,7 +13,7 @@ h1 a {
 }
 
 .page-header {
-    background-color: aliceblue;
+    background-color: LightSkyBlue;
     margin-top: 0;
     padding: 5px 5px 5px 5px;
     text-align: left;
@@ -22,7 +22,7 @@ h1 a {
 }
 
 .page-header, .page-header a, .page-header a:visited, .page-header a:active {
-    color: /*white*/;
+    color: white;
     font-size: 24pt;
     text-decoration: none;
     font-family: 'IM Fell Great Primer', serif;
