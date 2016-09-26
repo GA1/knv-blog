@@ -10,7 +10,7 @@
             </div>
             <div class="post-language-and-text">
                 <img src="{% static "images/flags/" %}{{post.language}}" height="40" width="60">
-                <a href="/posts/{{post.title}}">{{post.title}}</a>
+                <a class="title" href="/posts/{{post.title}}">{{post.title}}</a>
             </div>
             <div class="post-text">
             	<p>{{ post.text|linebreaksbr }}</p>

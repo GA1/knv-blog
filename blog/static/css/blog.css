@@ -41,16 +41,13 @@ h1 a {
     font-family: 'IM Fell Great Primer', serif;
 }
 
-.title, .title a{
+.title {
     text-decoration: none;
     font-size: 25pt;
     font-family: 'IM Fell Great Primer', serif;
 }
 
 .post-language-and-text {
-    text-decoration: none;
-    font-size: 25pt;
-    font-family: 'IM Fell Great Primer', serif;
     display: inline-block;
     margin-bottom: 30px;
 }
