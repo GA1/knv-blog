@@ -9,6 +9,7 @@ def post_list(request):
   posts = Post.objects.all().filter(is_draft=False).order_by('-created_date')
   for post in posts:
     post.text = post.text[:100] + "......."
+    post.language = post.language + ".gif"
   return render(request, 'blog/post_list.html', {'posts':posts})
 
 def post(request, title):

@@ -32,6 +32,7 @@ h1 a {
     text-align: justify;
     font-size: 18pt;
     font-family: 'IM Fell Great Primer', serif;
+    display: inline-block;
 }
 
 .writing-text {
@@ -46,10 +47,23 @@ h1 a {
     font-family: 'IM Fell Great Primer', serif;
 }
 
+.post-language-and-text {
+    text-decoration: none;
+    font-size: 25pt;
+    font-family: 'IM Fell Great Primer', serif;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
 .date {
     font-size: 15;
     float: right;
     color: #D2D0BA;
+}
+
+.post-language {
+    float: center;
+    display: inline-block;
 }
 
 .save {

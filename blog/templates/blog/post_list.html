@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -7,7 +8,8 @@
             <div class="date">
                 {{ post.created_date }}
             </div>
-            <div class="title">
+            <div class="post-language-and-text">
+                <img src="{% static "images/flags/" %}{{post.language}}" height="40" width="60">
                 <a href="/posts/{{post.title}}">{{post.title}}</a>
             </div>
             <div class="post-text">
