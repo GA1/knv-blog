@@ -45,6 +45,7 @@ h1 a {
     text-decoration: none;
     font-size: 25pt;
     font-family: 'IM Fell Great Primer', serif;
+    vertical-align: middle;
 }
 
 .post-language-and-text {
@@ -58,9 +59,8 @@ h1 a {
     color: #D2D0BA;
 }
 
-.post-language {
-    float: center;
-    display: inline-block;
+.language-flag {
+    vertical-align:middle;
 }
 
 .save {
