@@ -61,18 +61,19 @@ h1 a {
 
 .language-flag {
     vertical-align:middle;
+    margin-right: 8px;
 }
 
 .save {
     float: right;
 }
-
+/*
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #3066BE;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
-}
+}*/
 
 .post {
     font-size: 20;

@@ -14,6 +14,7 @@ def post_list(request):
 
 def post(request, title):
   post = Post.objects.filter(is_draft=False, title=title).first()
+  post.language = post.language + ".gif"
   if post == None:
     return no_page_found(request)
   return render(request, 'blog/post.html', {'post':post})

@@ -1,16 +1,12 @@
 {% extends 'blog/base.html' %}
-{% load static %}
+
 
 {% block content %}
 
     {% for post in posts %}
         <div class="post">
-            <div class="date">
-                {{ post.created_date }}
-            </div>
-            <div class="post-language-and-text">
-                <img class="language-flag" src="{% static "images/flags/" %}{{post.language}}" height="30" width="45">
-                <a class="title" href="/posts/{{post.title}}">{{post.title}}</a>
+            <div class=post-header>
+                {% include "blog/post_header.html"%}
             </div>
             <div class="post-text">
             	<p>{{ post.text|linebreaksbr }}</p>

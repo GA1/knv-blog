@@ -1,0 +1,9 @@
+{% load static %}
+
+<div class="date">
+    {{ post.created_date }}
+</div>
+<div class="post-language-and-text">
+    <img class="language-flag" src="{% static "images/flags/" %}{{post.language}}" height="30" width="45">
+    <a class="title" href="/posts/{{post.title}}">{{post.title}}</a>
+</div>

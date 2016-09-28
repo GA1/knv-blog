@@ -1,17 +1,15 @@
 {% extends 'blog/base.html' %}
-{% load staticfiles %}
 
 {% block content %}
-{% autoescape off %}
+
         <div class="post">
-            <div class="date">
-                {{ post.created_date }}
-            </div>
-            <div class="title">
-                <a href="/posts/{{post.title}}">{{post.title}}</a>
+            <div class=post-header>
+                {% include "blog/post_header.html"%}
             </div>
             <div class="post-text">
-                <p>{{ post.text|linebreaksbr }}</p>
+                {% autoescape off %}
+                    <p>{{ post.text|linebreaksbr }}</p>
+                {% endautoescape %}
             </div>
         </div>
 
@@ -37,6 +35,6 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
-{% endautoescape %}
+
 {% endblock %}
 
