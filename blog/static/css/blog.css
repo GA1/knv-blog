@@ -48,7 +48,7 @@ h1 a {
     vertical-align: middle;
 }
 
-.post-language-and-text {
+.post-language-and-title {
     display: inline-block;
     margin-bottom: 30px;
 }
@@ -67,13 +67,6 @@ h1 a {
 .save {
     float: right;
 }
-/*
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #3066BE;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}*/
 
 .post {
     font-size: 20;
