@@ -50,7 +50,7 @@ h1 a {
 
 .post-language-and-title {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .date {
@@ -71,6 +71,6 @@ h1 a {
 .post {
     font-size: 20;
     color: #000000;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
