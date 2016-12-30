@@ -9,8 +9,7 @@ class Post(models.Model):
     language = models.TextField(default="en")
     topic = models.TextField(default="Programming")
     is_draft = models.BooleanField(default=False)
-    created_date = models.DateTimeField(
-            default=timezone.now)
+    created_date = models.DateTimeField()
     published_date = models.DateTimeField(
             default=timezone.now)
 
