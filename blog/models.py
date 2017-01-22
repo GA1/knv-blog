@@ -20,6 +20,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class Writing(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
