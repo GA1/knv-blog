@@ -2,7 +2,10 @@
 <html>
     <head>
         <title>KNV's Blog</title>
-		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
 	<body>
 	    <div id="page-header" class="page-header">
@@ -20,13 +23,7 @@
 	    </div>
 
     	<script src="{% static 'js/base.js' %}">
-		</script>
 
-		<script>
-			$('head').append('<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">');
-			$('head').append('<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">');
-			$('head').append('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer">');
-			$('head').append('<link rel="stylesheet" href="{% static "css/blog.css" %}">');
 		</script>
 
 	</body>
